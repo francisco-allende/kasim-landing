@@ -1,4 +1,4 @@
-**Preview URL:** _coming soon (Vercel)_
+**Preview URL:** [https://kasim-landing.vercel.app/](https://kasim-landing.vercel.app/)
 
 # HW5 — Landing Page for Kasim Aslam: Right Hand Program
 
