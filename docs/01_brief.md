@@ -65,24 +65,22 @@ Source: `second-brain/02_Offer/companies-and-other-offers.md` ("Other offers")
    Source: `second-brain/02_Offer/right-hand-program-pricing.md`
 2. **Story:** In 2018 Kasim hired Ivan Bunin, 18, off Freelancer.com as his EA. Ivan rose to CTO
    of Solutions 8, ran the due diligence on its 8-figure sale, and co-founded Pareto Talent. The
-   mission is to give talented people "the same chance Ivan got". This story shows what a Right
-   Hand can become. It is never presented as a client result.
+   mission is "1,000 Founders. 1,000 Right Hands.": give 1,000 people "the same chance Ivan got".
+   This story shows what a Right Hand can become. It is never presented as a client result.
    Source: `second-brain/03_People/ivan-bunin.md`; `second-brain/05_Strategy/current-focus-and-mission.md`
 3. **Credentials:** Kasim built Solutions 8 into the #1-ranked Google Ads agency in the world
-   (~$100M ad spend), sold it in an 8-figure exit (2022), and has built 6 million-dollar
-   businesses. He uses 3 Pareto EAs himself.
+   (200 clients, ~$100M ad spend) and sold it in an 8-figure exit (2022). He uses 3 Pareto EAs
+   himself.
    Source: `second-brain/01_Identity/kasim-aslam-profile.md`; `second-brain/04_History/solutions-8-exit.md`; `second-brain/03_People/people-directory.md`
 
 ## Conflicts kept off the page
 Source: `second-brain/07_Admin/source-conflicts.md`
-- **Number of exits** (site 3 · podcast host 2): say "an 8-figure exit", no count. ⚠️ A third
-  data point, "two successful exits" in his own Medium article (`second-brain/06_Library/medium-articles.md`),
-  is not yet logged in `source-conflicts.md`.
+**Rule:** only **open** conflicts (status "Ask Kasim") stay off the page. Rows marked "Consistent"
+or "Resolved" use the value in the "Use" column (200 clients; the 1,000 placement goal).
+- **Number of exits** (site 3 · podcast host 2 · his Medium article 2): say "an 8-figure exit", no count.
+- **Number of businesses built** (site 6 · Medium "four agencies"): no count. Logged 2026-09-28.
 - **Pareto founding year** (2020 vs 2023–2024): no founding year on the page.
 - **Who is Pareto's CEO:** say "co-founders".
-- **Rule set in the inverse interview:** every number listed in `source-conflicts.md` stays off the
-  page, whatever its status. That includes Solutions 8's 200 clients and the 300 / 1,000
-  placement goal. See `docs/03_inverse_interview.md`.
 
 ## UNVERIFIED
 - A normal week for the audience (see above).

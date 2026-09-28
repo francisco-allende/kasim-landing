@@ -19,11 +19,13 @@ Claude asked all 20 at once and gave a suggested answer from the Second Brain un
 The final answers below are the suggestions after my review and edits.
 
 ## Rules set during the interview
-- **Conflict rule (Q9, Q11):** any number listed in `second-brain/07_Admin/source-conflicts.md`
-  stays off the page, even if its status there is "Resolved" or "Consistent". That applies to:
-  the Pareto founding year, the number of exits, the Solutions 8 client count (200), and the
-  placement goal (300 / 1,000).
-- **People rule (Q10):** community names only. No quotes, no personal names, no photos of real people.
+- **Conflict rule (Q9, Q11, clarified in step 2):** only **open** conflicts in
+  `second-brain/07_Admin/source-conflicts.md` (status "Ask Kasim") stay off the page: the Pareto
+  founding year, the number of exits, who is CEO, and the number of businesses built (logged
+  2026-09-28). "Consistent" and "Resolved" numbers are allowed: Solutions 8's 200 clients and
+  the 1,000 placement goal.
+- **People rule (Q10):** in social proof, community names only. No quotes, no personal names, no
+  photos of real people. (Ivan Bunin's story is allowed separately by Q7.)
 - **No invented quotes (Q4):** no customer quotes of any kind.
 
 ---
@@ -91,12 +93,10 @@ Source: `03_People/people-directory.md`
 
 **11. What's Kasim's personal credibility line?**
 Solutions 8 facts and the 2022 exit: built into the #1-ranked Google Ads agency in the world,
-~$100M ad spend under management, 8-figure exit in 2022.
-- **200 clients: off the page.** It is listed in `source-conflicts.md` (status "Consistent"), so
-  the conflict rule applies.
-- **"Six businesses": allowed.** The count is not listed in `source-conflicts.md`. ⚠️ Note: his
-  Medium article says "four 7- and 8-figure agencies with two successful exits", which isn't
-  logged in `source-conflicts.md` yet.
+200 clients and ~$100M ad spend under management, 8-figure exit in 2022.
+- **200 clients: allowed.** Status "Consistent" in `source-conflicts.md`.
+- **"Six businesses": off the page.** It conflicts with his Medium article ("four 7- and
+  8-figure agencies with two successful exits"). Now logged in `source-conflicts.md` as "Ask Kasim".
 Source: `01_Identity/kasim-aslam-profile.md`; `04_History/solutions-8-exit.md`; `07_Admin/source-conflicts.md`; `06_Library/medium-articles.md`
 
 ## Time delay and effort
