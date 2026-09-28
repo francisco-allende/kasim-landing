@@ -25,7 +25,7 @@ build and must not appear on the page.
 
 **Eyebrow:** For 7- and 8-figure founders who are the bottleneck in their own company.
 
-**Headline:** Get 40+ hours back in your first 30 days. Or your next month is free.
+**Headline:** Get 40+ hours back in your first 30 days. Or your next month is free.*
 
 **Subhead:** The Right Hand Program gives you a full-time, AI-powered Right Hand from the top 1% of
 applicants, plus the system that teaches you to delegate to them.
@@ -36,8 +36,11 @@ applicants, plus the system that teaches you to delegate to them.
 
 **Proof number:** 93% retention at 12 months.
 
-*Note: the headline is the Freedom 40 guarantee. Its condition ("if you follow the plan") appears
-in full in section 8. The hero uses exactly one proof number.*
+**Small line under the proof number:** \*Freedom 40 applies when you follow the plan. [See guarantees.](#guarantees)
+
+*Note: the headline is the Freedom 40 guarantee. The asterisk and the small line carry its
+condition, and "See guarantees" links to section 8 (anchor `#guarantees`). The hero uses exactly
+one proof number.*
 
 Sources: `02_Offer/right-hand-program-pricing.md` (Freedom 40, Matching guarantee, top 1%, 93%
 retention, 7- and 8-figure founders); `01_Identity/kasim-aslam-profile.md` (bottleneck).
