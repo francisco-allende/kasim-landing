@@ -161,14 +161,22 @@ a { color: inherit; }
   display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px;
 }
 .communities__label { width: 100%; }
-.community { font-weight: 700; white-space: nowrap; }
-/* The " · " stays in the text (copy + screen readers); a thin rule replaces it visually */
+/* Each name carries its own left rule; the list is shifted left and clipped, so the rule of
+   whichever name starts a line is hidden. No stray divider when the row wraps. */
+.communities__names { display: block; overflow: hidden; flex: 1 1 auto; }
+.communities__list { display: flex; flex-wrap: wrap; row-gap: 10px; margin-left: -17px; }
+.community {
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 0 16px;
+  border-left: 1px solid rgb(245 240 231 / 0.3);
+}
+/* The " · " stays in the text (copy + screen readers) but is visually hidden */
 .sep {
-  display: inline-block;
-  width: 1px; height: 1.1em;
-  background: rgb(245 240 231 / 0.3);
+  position: absolute;
+  width: 1px; height: 1px;
   overflow: hidden;
-  color: transparent;
+  clip: rect(0 0 0 0);
   white-space: nowrap;
 }
 

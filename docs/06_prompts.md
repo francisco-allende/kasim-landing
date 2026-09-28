@@ -35,6 +35,31 @@ stacked on mobile. Lucide icons inlined from `lucide-static` v1.48.0. There are 
 | 1 | Desktop hero: h1 capped at `clamp(2.25rem, 1rem + 2.4vw, 3.125rem)`, logo margin 40 → 28 px, lead 1.1875 → 1.125rem | QA: at 1280×720 the proof line (774 px) and the footnote (799 px) fell below the fold. After the change they end at 637 and 662 px | Self-QA during the step 4 build (no separate user prompt) |
 | 2 | More personality, still premium: italic Brass hero line, editorial section markers, dark social-proof band with count-up, pull quote, check / shield-check icons, dark price block, scroll fade-ups, card hover lift, mobile sticky CTA | Personality without breaking the brand rules or the copy | Prompt below |
 
+| 3 | Section markers added to `04_copy.md`; sticky bar hidden while the final CTA is in view; community dividers fixed on wrap | Keep the copy file the source of truth; avoid two CTAs on screen at the bottom; no stray divider | Prompt below ("Iteration 3 prompt") |
+
+### Iteration 3 prompt
+
+```
+Decisions:
+- Add the section markers to docs/04_copy.md so the copy file stays the source of truth.
+- Hide the sticky bar when the final CTA section is in view.
+- Fix the stray divider when the community names wrap.
+- Favicon confirmed in a real browser (Edge tab shows the RH monogram).
+Log this as iteration 3 in docs/06_prompts.md and commit: "Step 4: iteration 3".
+```
+
+**Implementation notes (iteration 3):**
+- `04_copy.md`: a `**Section marker:**` line in sections 2–9 (01 — Track record … 08 — Next step).
+- Sticky bar: a single IntersectionObserver watches the hero and the final CTA. The bar shows only
+  when neither is in view.
+- Community row: each name has its own left rule. The list is shifted left 17 px inside an
+  `overflow: hidden` wrapper, so the rule of whichever name starts a line is clipped. The " · "
+  separators stay in the text but are visually hidden (screen-reader only).
+
+**QA after iteration 3:** copy 84/84 lines (now including the 8 markers). Sticky bar: hidden on
+the hero, shown mid-page, hidden at the final CTA. Dividers checked at 320, 375, 414, 768 and
+1280 px: the first name on every line has its rule clipped. Favicon confirmed by the user in Edge.
+
 ### Iteration 2 prompt
 
 ```

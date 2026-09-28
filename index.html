@@ -46,7 +46,7 @@
         <li><strong data-count="650" data-suffix="+">650+</strong> pre-vetted candidates</li>
         <li><strong>$0</strong> spent on ads</li>
       </ul>
-      <p class="communities"><span class="communities__label">Trusted by founders from</span> <span class="community">Genius Network</span><span class="sep"> · </span><span class="community">Lifestyle Investor</span><span class="sep"> · </span><span class="community">Front Row Dads</span><span class="sep"> · </span><span class="community">Driven Mastermind</span></p>
+      <p class="communities"><span class="communities__label">Trusted by founders from</span> <span class="communities__names"><span class="communities__list"><span class="community">Genius Network</span><span class="sep"> · </span><span class="community">Lifestyle Investor</span><span class="sep"> · </span><span class="community">Front Row Dads</span><span class="sep"> · </span><span class="community">Driven Mastermind</span></span></span></p>
     </div>
   </section>
 
@@ -268,16 +268,27 @@
     nums.forEach(function (el) { co.observe(el); });
   }
 
-  // Sticky CTA after the hero scrolls out of view
+  // Sticky CTA: shown after the hero scrolls out of view, hidden again while the final CTA is in view
   var bar = document.querySelector('.sticky-cta');
   var hero = document.querySelector('.hero');
-  if (bar && hero && hasIO) {
-    new IntersectionObserver(function (entries) {
-      var shown = !entries[0].isIntersecting;
+  var final = document.querySelector('.final');
+  if (bar && hero && final && hasIO) {
+    var heroVisible = true, finalVisible = false;
+    var update = function () {
+      var shown = !heroVisible && !finalVisible;
       bar.classList.toggle('is-shown', shown);
       bar.setAttribute('aria-hidden', shown ? 'false' : 'true');
       bar.querySelector('a').setAttribute('tabindex', shown ? '0' : '-1');
-    }).observe(hero);
+    };
+    var so = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.target === hero) heroVisible = e.isIntersecting;
+        if (e.target === final) finalVisible = e.isIntersecting;
+      });
+      update();
+    });
+    so.observe(hero);
+    so.observe(final);
   }
 })();
 </script>

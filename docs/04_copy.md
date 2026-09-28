@@ -14,6 +14,8 @@ No invented numbers, testimonials or guarantees. Mark anything unverified.
 
 **The one CTA (every button):** `Book your free Matching Call` → `https://paretotalent.com/matching`
 
+**Section markers** (added in build iteration 3): a small uppercase label above each h2, numbered from the first section after the hero. They are UI labels, not claims.
+
 Sources after each section refer to files under `second-brain/`. Notes in *italics* are for the
 build and must not appear on the page.
 
@@ -51,6 +53,8 @@ retention, 7- and 8-figure founders); `01_Identity/kasim-aslam-profile.md` (bott
 
 **Objection it fights:** "Can I trust them?"
 
+**Section marker:** 01 — Track record
+
 **Headline:** $0 on ads. 100% referral.
 
 **Subhead:** Founders find us because other founders sent them.
@@ -76,6 +80,8 @@ Sources: `02_Offer/right-hand-program-pricing.md` (numbers, 100% referral); `03_
 ## 3. Problem
 
 **Objection it fights:** "Do they get me?"
+
+**Section marker:** 02 — The problem
 
 **Headline:** You don't have a people problem. You have a delegation problem.
 
@@ -107,6 +113,8 @@ Sources: `05_Strategy/current-focus-and-mission.md` (headline line, used with yo
 
 **Objection it fights:** "What happens next?"
 
+**Section marker:** 03 — How it works
+
 **Headline:** Four steps. We handle the hard part.
 
 **Subhead:** Kasim personally reviews every match.
@@ -133,6 +141,8 @@ matches, Matching guarantee); `02_Offer/companies-and-other-offers.md` (Matching
 
 **Objection it fights:** "What changes for me?"
 
+**Section marker:** 04 — What changes
+
 **Headline:** Here's what changes when the work stops running through you.
 
 **Subhead:** Outcomes, not features.
@@ -156,6 +166,8 @@ Sources: `02_Offer/right-hand-program-pricing.md` (all points); `01_Identity/fra
 ## 6. More social proof
 
 **Objection it fights:** "Still not sure."
+
+**Section marker:** 05 — The story
 
 **Headline:** My first Right Hand became my co-founder.
 
@@ -192,6 +204,8 @@ diligence, co-founder); `04_History/solutions-8-exit.md` (#1 ranked, 200 clients
 ## 7. The offer
 
 **Objection it fights:** "What do I get?"
+
+**Section marker:** 06 — The offer
 
 **Headline:** The Right Hand Program
 
@@ -236,6 +250,8 @@ Sources: `02_Offer/right-hand-program-pricing.md` (all components, price, fee);
 
 **Objection it fights:** "What if it fails?"
 
+**Section marker:** 07 — Guarantees
+
 **Headline:** Three guarantees. The risk is on us.
 
 **Subhead:** Freedom 40 comes first.
@@ -254,6 +270,8 @@ Sources: `02_Offer/right-hand-program-pricing.md` (all three, as published).
 ## 9. Final CTA
 
 **Objection it fights:** none left. Ask again.
+
+**Section marker:** 08 — Next step
 
 **Headline:** Stop being the bottleneck.
 
