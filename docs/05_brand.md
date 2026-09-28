@@ -89,7 +89,11 @@ Stroke style, 1.75–2 px stroke, colours as in the palette rules above.
 | 5 · Benefits | HR is off your plate | `user-cog` |
 | 5 · Benefits | The AI is already handled | `bot` |
 
-All nine names checked against the lucide-static CDN (HTTP 200) on 2026-09-28.
+| 7 · The offer | Value stack items (instead of bullets) | `check` |
+| 8 · Guarantees | Each guarantee card | `shield-check` |
+
+All names checked against the lucide-static CDN (HTTP 200) on 2026-09-28. `check` and
+`shield-check` were added in build iteration 2.
 
 ## 6. Images (3, AI-generated in ChatGPT)
 
