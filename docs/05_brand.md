@@ -55,6 +55,10 @@ Rules for the build:
 - Only these three colours. Tints and shades are not allowed; use opacity sparingly for borders only.
 - On Paper sections, icons are Forest Ink. On dark sections, icons are Brass.
 - The CTA button is always Brass with a Forest Ink label, on both light and dark sections.
+- Every CTA ("Apply for a free Matching Call") links to `#apply`, the embedded GoHighLevel lead form
+  at the bottom of the final CTA section (centered, max-width 640 px). The form's colours are set in
+  GoHighLevel, not in `styles.css`. Target: Brass `#C99A56` submit button with a Forest Ink
+  `#1C2B25` label (iteration 4).
 
 ## 4. Font pair
 

@@ -5,10 +5,12 @@
 Day 5 · Funnels, Vibe Coding & Branding · Pareto Talent Bootcamp
 
 **One offer:** the Right Hand Program (Pareto Talent) · **One audience:** 7- and 8-figure founders
-who are the bottleneck in their own company · **One action:** Book your free Matching Call →
-[paretotalent.com/matching](https://paretotalent.com/matching)
+who are the bottleneck in their own company · **One action:** Apply for a free Matching Call →
+every button scrolls to the embedded GoHighLevel lead form at
+[#apply](https://kasim-landing.vercel.app/#apply)
 
-Built with Claude Code: plain HTML + CSS + a small inline script, no framework. Every fact comes from
+Built with Claude Code: plain HTML + CSS + a small inline script, no framework. The lead form is a
+GoHighLevel embed (iframe + `form_embed.js`). Every fact comes from
 the Kasim Aslam Second Brain (HW3) and cites its source file. The Second Brain itself is not in
 this repo.
 
@@ -24,7 +26,7 @@ this repo.
 | 3 · Inverse interview | [docs/03_inverse_interview.md](docs/03_inverse_interview.md) | Prompt + 20 questions with sourced answers |
 | 4 · Copy | [docs/04_copy.md](docs/04_copy.md) | Copy for all 9 sections, written before the build |
 | 5 · Brand | [docs/05_brand.md](docs/05_brand.md) | Logo, favicon, palette, fonts, icons, image prompts + log |
-| 6 · Build prompts | [docs/06_prompts.md](docs/06_prompts.md) | Build prompt, iterations 1–3, QA results |
+| 6 · Build prompts | [docs/06_prompts.md](docs/06_prompts.md) | Build prompt, iterations 1–4, QA results |
 | Page | [index.html](index.html) · [styles.css](styles.css) | The landing page |
 
 ## 2. Prompts
@@ -34,7 +36,7 @@ this repo.
 | Brief | [docs/01_brief.md](docs/01_brief.md) (top of file) |
 | Inverse interview | [docs/03_inverse_interview.md](docs/03_inverse_interview.md) (top of file) |
 | Copy | [docs/04_copy.md](docs/04_copy.md) (top of file) |
-| Build + iterations 1–3 | [docs/06_prompts.md](docs/06_prompts.md) |
+| Build + iterations 1–4 | [docs/06_prompts.md](docs/06_prompts.md) |
 | Image prompts (3) | [docs/05_brand.md](docs/05_brand.md), section 6 |
 
 ## 3. Assets
@@ -86,7 +88,8 @@ Full version: [docs/02_offer.md](docs/02_offer.md).
   CTA, and the guarantee condition as a footnote.
 - Every claim is traceable to a Second Brain file. Where sources disagree, the number stays off
   the page (exit count, businesses count, founding year, CEO title).
-- One CTA, one link, everywhere. No navigation leaves the page.
+- One CTA, one destination, everywhere: every button scrolls to the embedded lead form (`#apply`),
+  so the visitor never leaves the page.
 - A consistent brand system: 3 colours, 1 font pair, 1 icon set. Motion is subtle and switched
   off under `prefers-reduced-motion`.
 - QA was automated: the rendered page was checked line by line against `04_copy.md` (84/84), and
@@ -101,6 +104,8 @@ Full version: [docs/02_offer.md](docs/02_offer.md).
   not sourced.
 - No design references were collected, and the palette wasn't pulled with CSS Peeper. It was
   designed directly and contrast-checked.
+- The embedded GoHighLevel form keeps its own styling (white card, blue button) until its colours
+  are changed in GoHighLevel; the page's CSS can't restyle the iframe.
 - Content below the hero fades in on scroll, so some full-page screenshot tools capture those
   sections blank unless the page is scrolled first.
 

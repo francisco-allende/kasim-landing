@@ -37,6 +37,54 @@ stacked on mobile. Lucide icons inlined from `lucide-static` v1.48.0. There are 
 
 | 3 | Section markers added to `04_copy.md`; sticky bar hidden while the final CTA is in view; community dividers fixed on wrap | Keep the copy file the source of truth; avoid two CTAs on screen at the bottom; no stray divider | Prompt below ("Iteration 3 prompt") |
 
+| 4 | GoHighLevel lead form embedded at `#apply` (bottom of the final CTA section); every CTA now scrolls to it; CTA text → "Apply for a free Matching Call"; docs updated | Capture leads on the page instead of sending visitors away; button text now matches what the button does | Prompts below ("Iteration 4 prompts") |
+
+### Iteration 4 prompts
+
+**4a · Embed the form**
+```
+Embed my GoHighLevel lead form on the landing page.
+
+1. Find the main CTA / application section in index.html. If there isn't one,
+   create a section with id="apply" right before the footer, with a short heading
+   like "Apply for the Right Hand Program" in the page's existing style.
+2. Paste this embed inside that section, in a centered container (max-width ~640px):
+   [GoHighLevel iframe for form qPtJ1fCanOzMLO60z0Oa + form_embed.js script]
+3. Make every CTA button on the page link to #apply with smooth scroll.
+4. Check it looks right on mobile (no horizontal scroll, form fully visible).
+5. Don't change any other copy or design.
+6. Commit with message "Embed GHL lead form" and push to main so Vercel redeploys.
+```
+
+**4b · CTA copy + docs**
+```
+Yes to 1 and 3:
+1. Change all CTA button text to "Apply for a free Matching Call".
+3. Update README, 04_copy.md and 05_brand.md so the CTA points to the embedded
+   GHL form at #apply, and log this as iteration 4 in 06_prompts.md.
+I'll change the form colours in GoHighLevel myself.
+Commit as "Iteration 4: GHL form embed + CTA copy" and push.
+```
+
+**Implementation notes (iteration 4):**
+- The page had no footer but already had a main CTA section (section 9), so no new section or
+  heading was added. The form sits in a full-width row at the bottom of section 9
+  (`<div class="apply" id="apply">`), in a centered container with max-width 640 px. On desktop the
+  section's flex row wraps so the form sits below the text/image split.
+- The embed code (iframe + `https://link.msgsndr.com/js/form_embed.js`) is pasted unchanged.
+- All 5 CTAs (4 in the page + the mobile sticky bar) link to `#apply`. Smooth scroll comes from the
+  existing `scroll-behavior: smooth` (off under reduced motion). `scroll-margin-top: 24px` on `#apply`.
+- CTA text changed on all 5 buttons. Step 1 in section 4 ("Book your free Matching Call.") is a
+  step title, not a button, and was left as is.
+- Committed in two parts: `1c97382` "Embed GHL lead form" (4a), then
+  "Iteration 4: GHL form embed + CTA copy" (4b).
+
+**QA after iteration 4:** clicking the hero CTA scrolls to `#apply` at 375×667, 320×640 and 1440×900.
+No horizontal scroll (scrollWidth = viewport width). At 375 px the form (resized to 622 px by the
+embed script) sits at 20–355 px horizontally and 24–646 px vertically, fully visible. Sticky bar
+hidden while the form is in view. The form keeps GoHighLevel's own styling (white card, blue
+button) until its colours are changed in GoHighLevel.
+
 ### Iteration 3 prompt
 
 ```

@@ -12,7 +12,9 @@ headline, subhead, body, CTA text if any. One CTA only, same text everywhere.
 No invented numbers, testimonials or guarantees. Mark anything unverified.
 ```
 
-**The one CTA (every button):** `Book your free Matching Call` → `https://paretotalent.com/matching`
+**The one CTA (every button):** `Apply for a free Matching Call` → `#apply`, the embedded GoHighLevel
+lead form ("Right Hand Lead Form") at the bottom of section 9. Changed in build iteration 4; it was
+`Book your free Matching Call` → `https://paretotalent.com/matching`.
 
 **Section markers** (added in build iteration 3): a small uppercase label above each h2, numbered from the first section after the hero. They are UI labels, not claims.
 
@@ -32,7 +34,7 @@ build and must not appear on the page.
 **Subhead:** The Right Hand Program gives you a full-time, AI-powered Right Hand from the top 1% of
 applicants, plus the system that teaches you to delegate to them.
 
-**CTA:** `Book your free Matching Call`
+**CTA:** `Apply for a free Matching Call`
 
 **Under the CTA:** No contract until you meet a candidate you're excited about.
 
@@ -126,7 +128,7 @@ Sources: `05_Strategy/current-focus-and-mission.md` (headline line, used with yo
 3. **Meet 3 hand-picked candidates within 24 hours.** No contract until you're excited about one.
 4. **Integrate over 30 days.** A Success Manager works with you and your Right Hand through the first month.
 
-**CTA:** `Book your free Matching Call`
+**CTA:** `Apply for a free Matching Call`
 
 *Note: step 1 only names the call. Its length and format are UNVERIFIED and not described (Q20).
 Whether the Matching Call comes before the PI assessment is inferred from the order on the page,
@@ -236,7 +238,7 @@ diligence, co-founder); `04_History/solutions-8-exit.md` (#1 ranked, 200 clients
 
 **Line under the price:** The price is on the page because you should know it before we talk.
 
-**CTA:** `Book your free Matching Call`
+**CTA:** `Apply for a free Matching Call`
 
 *Note: annual plan only, as agreed in Q14. The contents of the 7 Laws of Delegation are UNVERIFIED,
 so only the name is used.*
@@ -280,11 +282,17 @@ Sources: `02_Offer/right-hand-program-pricing.md` (all three, as published).
 **Body:**
 Your turn: what would you do with 40 hours back? And what's the first thing you'd hand off?
 
-**CTA:** `Book your free Matching Call`
+**CTA:** `Apply for a free Matching Call`
 
 **Under the CTA:** No contract until you meet a candidate you're excited about.
 
+**Lead form (below the CTA, `id="apply"`):** the embedded GoHighLevel "Right Hand Lead Form". Its
+fields (Full Name, Email, Role, Biggest Time Drain) and styling come from GoHighLevel, not this file.
+
 *Voice device #2 of 2: the "Your turn:" closer with two pointed questions.*
+
+*Note: every CTA on the page scrolls to this form. Step 1 in section 4 still reads "Book your free
+Matching Call." It is a step title, not a button, and wasn't changed in iteration 4.*
 
 Sources: `02_Offer/right-hand-program-pricing.md` (Freedom 40, Matching); `01_Identity/voice-and-style.md` (closer).
 
