@@ -274,6 +274,11 @@ a { color: inherit; }
 .final__media img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
 .final__text { padding: 48px var(--gutter) 64px; }
 
+/* Lead form (GoHighLevel embed), full-width row at the bottom of the final CTA section */
+.apply { padding: 0 var(--gutter) 64px; scroll-margin-top: 24px; }
+.apply__form { max-width: 640px; margin: 0 auto; }
+.apply__form iframe { display: block; }
+
 /* Mobile sticky CTA */
 .sticky-cta { display: none; }
 @media (max-width: 719px) {
@@ -322,7 +327,8 @@ a { color: inherit; }
   .steps { grid-template-columns: repeat(4, 1fr); }
   .benefits { grid-template-columns: repeat(3, 1fr); }
 
-  .final { flex-direction: row-reverse; }
+  .final { flex-direction: row-reverse; flex-wrap: wrap; }
+  .apply { flex: 0 0 100%; padding-top: 64px; padding-bottom: 88px; }
   .final__media { flex: 1; }
   .final__media img { height: 100%; aspect-ratio: auto; }
   .final__text {
